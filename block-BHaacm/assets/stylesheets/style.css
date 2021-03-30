@@ -1,0 +1,289 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* ............................................... */
+/* custom-styles */
+body{
+    font-size: 1.4rem;
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+}
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.input,button{
+    box-shadow: none;
+    border: 0;
+    outline: 0;
+}
+html{
+    font-size: 16px;
+}
+
+.container{
+    max-width: 1200px;
+    margin:0 auto;
+    width: 100%;
+    padding: 0 2rem;
+}
+/* #flex# */
+.flex-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex{
+    display: flex;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.justify-center{
+    justify-content: center;
+}
+.items-center{
+    align-items: center;
+}
+.column{
+    flex-direction: column;
+}
+/* columns */
+.flex-20{
+    flex: 0 1 20%;
+}
+.flex-30{
+    flex: 0 1 30%;
+}
+.flex-45{
+    flex: 0 1 45%;
+}
+.flex-40{
+    flex: 0 1 40%;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.width-full{
+    width: 100%;
+}
+.font-0{
+    font: 0;
+}
+.btn{
+    max-width: 40%;
+    display: inline-block;
+    padding: 0.6rem 2rem;
+    letter-spacing: 0.8px;
+    cursor: pointer;
+    background-color: green;
+    font-size: 1rem;
+    border-radius: 4px;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+.btn:hover{
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    opacity: 0.8;
+    color: white;
+}
+/* ....................................... */
+/* general-styles */
+
+.header{
+    background-color: rgb(34,41,70);
+    padding: 1rem 0;
+}
+.active{
+    color: rgb(55,180,103);
+}
+.ul li{
+    font-size: 1rem;
+    margin-left: 2rem;
+}
+.ul li a:hover{
+    color: rgb(55,180,103);
+}
+
+.hero{
+    background-color: rgb(233,236,252); 
+}
+.article-1{
+    padding: 4em 0;
+}
+.heading{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.content{
+    margin-right: 3rem;
+}
+.para{
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: rgb(183,185,195);
+}
+/*  */
+
+.img{
+    object-fit: cover;
+    height: 230px;
+}
+
+.h2{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+}
+.para-2{
+    font-size: 1rem;
+    color:rgb(183,185,195) ;
+}
+.sub-header{
+    text-align: center;
+    font-weight: 700;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
+
+footer{
+    margin: 0 auto;
+    padding: 1.5rem;
+    background-color: rgb(34,41,70);
+}
+.section-2{
+    margin-bottom: 3rem;
+}
+small{
+    color: white;
+}
+.footer-ul li{
+    margin-left: 2rem;
+}
+@media screen and (max-width:768px){
+    html{
+        font-size: 10px;
+    }
+    .footer-ul li{
+        margin-left: 0;
+    }
+    .flex-100{
+        flex: 0 1 100%;
+        margin-bottom: 2rem;
+    }
+    .wrap{
+        flex-wrap: wrap;
+    }
+    .order{
+        order: 1;
+    }
+    .column-small{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+    .logo{
+        margin-bottom: 1rem;
+    }
+    .ul li{
+        font-size: 2rem;
+    }
+    .btn{
+        max-width: 35%;
+    }
+    .flex-1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .content{
+        margin-bottom: 2rem;
+        margin-left: 1.5rem;
+    }
+    .container-1{
+        padding: 1rem 1rem;
+        /* border: 2px solid red; */
+        max-width: 768px;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .img{
+        margin-bottom: 2rem;
+    }
+    .h2{
+        font-size: 3rem;
+        font-weight: 700;
+    }
+    .para-2{
+        font-size: 2rem;
+    }
+    .flex-40{
+        max-width: 20%;
+    }
+    .sub-input{
+        margin-bottom: 3rem;
+    }
+    .footer-ul{
+        margin-top: 2rem;
+    }
+    .flex-footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
